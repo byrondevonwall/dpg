@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+  <title>Durham Property Group</title>
+  <link href='./bower_components/bootstrap-css/css/bootstrap.css' rel='stylesheet'>
+  <link href='./assets/css/styles.css' rel='stylesheet'>
+</head>
+<body ng-app='dpg'>
+
+  <header ng-controller='headerCtrl'>
+    <nav class='navbar navbar-default' role='navigation'>
+      <div class='navbar-header'>
+        <button type="button" class="navbar-toggle" ng-init="navCollapsed = true" ngClick="navCollapsed = !navCollapsed">
+          <span class="sr-only"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">DPG</a>
+    </div>
+    <div class='collapse navbar-collapse' ng-class="!navCollapsed && 'in'">
+
+      <ul class='nav navbar-nav'>
+        <li><a href="#/available" ng-click='avail()'>Available Properties</a></li>
+        <li><a href='#/payrent' ng-click='payMe()'>Pay Rent</a></li>
+        <li><a href="#/contact" ng-click='contact()'>Contact Us</a></li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#/about" ng-click='about()'>About DPG</a></li>
+      </ul>
+    </div>
+  </nav>
+  </header>
+
+  <ng-view></ng-view>
+
+  <script src='./bower_components/angular/angular.js'></script>
+  <script src='./bower_components/angular-animate/angular-animate.js'></script>
+  <script src='./bower_components/angular-route/angular-route.js'></script>
+  <script src='./bower_components/angular-touch/angular-touch.js'></script>
+  <script src='./bower_components/angular-bootstrap/ui-bootstrap-tpls.js'></script>
+  <script src='./assets/js/app.js'></script>
+  <script src='./assets/js/headerCtrl.js'></script>
+</body>
