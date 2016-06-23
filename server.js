@@ -1,3 +1,4 @@
+require('dotenv').config();
 var express = require('express');
 var nodemailer = require('nodemailer');
 var smtpTransport = require("nodemailer-smtp-transport");
@@ -17,8 +18,8 @@ var transporter = nodemailer.createTransport(smtpTransport({
   secureConnection: true,
   port: 465,
   auth: {
-    user: DPG_USER,
-    pass: DPG_PASS
+    user: process.env.DPG_USER,
+    pass: process.env.DPG_PASS
   }
 }));
 
