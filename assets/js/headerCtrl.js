@@ -7,7 +7,7 @@ dpg.controller('headerCtrl', ['$scope', '$location', function($scope, $location)
 
   //go to pay rent
   $scope.payMe = function(){
-    $location.path('/payrent');
+    $location.path('/services');
   };
 
   //go to contact page

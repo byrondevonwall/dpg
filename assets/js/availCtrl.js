@@ -83,7 +83,7 @@ $scope.props = [
   {id: 1, name: '709 Dowd St.', addr: 'Durham, NC 27701', desc:
   'Five Bedrooms, 2 Baths, Great Location', price: '$1550/mo', slides:[{id: currIndex++, img:'./assets/img/media/image30.png', text:'Exterior'}, {id: currIndex++, img:'./assets/img/media/image29.png', text:'Kitchen'}, {id: currIndex++, img:'./assets/img/media/image32.png', text: 'Living Area'}]},
 
-  {id: 2, name: '804 Juniper St.', addr: 'Durham, NC 27701', desc: '2 bedrooms, one bath, great location', price:'$850/mo', slides:[{id: currIndex1++, img: './assets/img/media/image8.png', text: 'a pic'},{id: currIndex1++, img:'./assets/img/media/image12.png', text: 'another pic'}]}
+  {id: 2, name: '804 Juniper St.', addr: 'Durham, NC 27701', desc: '2 bedrooms, one bath, great location', price:'$850/mo', slides:[{id: currIndex1++, img: './assets/img/media/image8.png', text: 'Exterior'},{id: currIndex1++, img:'./assets/img/media/image12.png', text: 'Not the real interior, obvs'}]}
   ];
 
   // $scope.slides = prop.slides;

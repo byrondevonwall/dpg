@@ -78,6 +78,11 @@ html, body {
   height: 94vh;
   width: 59vw;
   margin: -20px 2% 0 0; }
+  @media screen and (max-width: 1000px) {
+    #avail-map {
+      width: 90vw;
+      height: 50vh;
+      margin: -20px 0 0 5%; } }
 
 .infowindowheader {
   width: 100%;
@@ -121,9 +126,17 @@ html, body {
   font-size: 2em;
   border: solid thin black;
   text-align: center;
-  cursor: pointer; }
+  cursor: pointer;
+  position: absolute;
+  bottom: -27%;
+  left: -.5%;
+  background-color: #fcfcfc; }
   .avail-contact:hover {
     background-color: #f2f2f2; }
+  @media screen and (max-width: 1000px) {
+    .avail-contact {
+      bottom: -35%;
+      left: .5%; } }
 
 .avail-mailer-form {
   position: fixed;
@@ -134,28 +147,47 @@ html, body {
   background-color: rgba(228, 225, 225, 0.9);
   box-shadow: -1px -1px 22px -1px rgba(0, 0, 0, 0.26);
   border-radius: 0.4em; }
+  @media screen and (max-width: 1000px) {
+    .avail-mailer-form {
+      top: 25%;
+      width: 65%;
+      left: 17.5%;
+      height: 30%; } }
   .avail-mailer-form .mailer-header {
     font-size: 1.5em;
     text-align: center;
     font-weight: bold; }
+    @media screen and (max-width: 1000px) {
+      .avail-mailer-form .mailer-header {
+        font-size: 2em; } }
   .avail-mailer-form #avail-contact-name {
     display: block;
     margin: 2% 5%;
     width: 90%;
     border-radius: 0.2em;
     border: none; }
+    @media screen and (max-width: 1000px) {
+      .avail-mailer-form #avail-contact-name {
+        font-size: 2.5em; } }
   .avail-mailer-form #avail-contact-email {
     display: block;
     margin: 2% 5%;
     width: 90%;
     border-radius: 0.2em;
     border: none; }
+    @media screen and (max-width: 1000px) {
+      .avail-mailer-form #avail-contact-email {
+        font-size: 2.5em; } }
   .avail-mailer-form #avail-contact-message {
     display: block;
     margin: 2% 5%;
     width: 90%;
     height: 130px;
     border: none; }
+    @media screen and (max-width: 1000px) {
+      .avail-mailer-form #avail-contact-message {
+        font-size: 2.5em;
+        height: 200px; } }
   .avail-mailer-form #avail-send-email {
     padding: 2% 10%;
     margin: 2%;
@@ -163,6 +195,9 @@ html, body {
     background-color: #c6c6c6;
     cursor: pointer;
     float: left; }
+    @media screen and (max-width: 1000px) {
+      .avail-mailer-form #avail-send-email {
+        font-size: 2em; } }
   .avail-mailer-form .avail-mailer-close {
     padding: 2% 10%;
     margin: 2%;
@@ -170,5 +205,8 @@ html, body {
     background-color: #c6c6c6;
     cursor: pointer;
     float: right; }
+    @media screen and (max-width: 1000px) {
+      .avail-mailer-form .avail-mailer-close {
+        font-size: 2em; } }
 
 /*# sourceMappingURL=styles.css.map */

@@ -10,9 +10,9 @@ dpg.config(function($routeProvider){
       templateUrl : './views/available.html',
       controller : 'availCtrl'
     })
-    .when('/payrent', {
+    .when('/services', {
       templateUrl : './views/payrent.html',
-      controller : 'payRentCtrl'
+      controller : 'servicesCtrl'
     })
     .when('/contact', {
       templateUrl : './views/contact.html',
