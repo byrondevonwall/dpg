@@ -24,16 +24,16 @@
      </div>
      <div class='listing-price'>{{prop.price}}</div>
     <div class='listing-desc'>{{prop.desc}}</div>
-    <div class='avail-contact' ng-click="mailerShow = true">Contact Us Regarding This Property</div>
+    <div class='avail-contact' ng-click="mailerShow = true">Contact Us About This Property</div>
 
     <div class='avail-mailer-form' ng-show='mailerShow'>
       <div class='avail-mailer-content'>
-        <div>Send Us an Email about {{prop.name}}, {{prop.addr}}</div>
+        <div class='mailer-header'>Send Us an Email about <br>{{prop.name}}</div>
         <input id='avail-contact-name' type='text' placeholder='Your Name'></input>
-        <input id='avail-contact-email' type='email' placeholder='Your Email'></input>
+        <input id='avail-contact-email' type='email' placeholder='Your Email Address'></input>
         <textarea id='avail-contact-message' placeholder='Your Message'></textarea>
-        <button id='avail-send-email' ng-click='sendEmail(prop.name)'>Send</button>
-        <div ng-click='mailerShow=false'>Close</div>
+        <span id='avail-send-email' ng-click='sendEmail(prop.name)'>Send Email</span>
+        <span class='avail-mailer-close' ng-click='mailerShow=false'>Close Window</span>
       </div>
     </div>
 
