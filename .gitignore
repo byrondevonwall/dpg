@@ -1,7 +1,0 @@
-bower_components/
-node_modules/
-assets/css/styles.scss
-assets/css/styles.css.map
-assets/csss/sass_cache/
-dpg.env
-process.env
