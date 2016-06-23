@@ -1,10 +1,35 @@
-<h3 class='avail-header'>CURRENTLY AVAILABLE PROPERTIES</h3>
+<!-- <h3 class='avail-header'>CURRENTLY AVAILABLE PROPERTIES</h3> -->
 <div class='row'>
-  <div class='col-md-6'>
-    gmap
-    <div id="avail-map"></div>
+  <div class='col-md-7'>
+    <div class='map-wrap'>
+      <div id="avail-map"></div>
+    </div>
   </div>
 
-  <div class='col-md-6'>
-    carousel
-  </div>
+  <div class='col-md-5'>
+    <div ng-repeat='prop in props | filter:filters'>
+      <div class='listing-name'>{{prop.name}}</div>
+      <div class='listing-addr'>{{prop.addr}}</div>
+
+
+      <div class="carousel-wrap">
+       <uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+         <uib-slide ng-repeat="slide in prop.slides  track by slide.id" index="slide.id">
+           <img ng-src="{{slide.img}}" style=" width:100%; height:400px" class='carousel-img'>
+           <div class="carousel-caption">
+             <p>{{slide.text}}</p>
+           </div>
+         </uib-slide>
+       </uib-carousel>
+     </div>
+     <div class='listing-price'>{{prop.price}}</div>
+    <div class='listing-desc'>{{prop.desc}}</div>
+    <div class='contact'>Contact Us Regarding This Property</div>
+    <div class='avail-mailer-form'>
+      <input id='avail-contact-name' type='text' placeholder='Your Name'></input>
+      <input id='avail-contact-email' type='email' placeholder='Your Email'></input>
+      <textarea id='avail-contact-message' placeholder='Your Message'></textarea>
+      <button id='avail-send-email' ng-click='sendEmail(prop.name)'>Send</button>
+    </div>
+   </div>
+ </div>
