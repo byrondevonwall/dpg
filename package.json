@@ -1,0 +1,26 @@
+{
+  "name": "dpg",
+  "version": "1.0.0",
+  "description": "durham property group",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Byron Wall",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/byrondevonwall/dpg.git"
+  },
+  "bugs": {
+    "url": "https://github.com/byrondevonwall/dpg/issues"
+  },
+  "homepage": "https://github.com/byrondevonwall/dpg#readme",
+  "dependencies": {
+    "dotenv": "^2.0.0",
+    "express": "^4.14.0",
+    "nodemailer": "^2.4.2",
+    "nodemailer-smtp-transport": "^2.5.0"
+  }
+}
