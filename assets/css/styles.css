@@ -113,4 +113,19 @@ html, body {
   font-size: 1.5em;
   text-align: center; }
 
+.avail-mailer-form {
+  position: fixed;
+  top: 40%;
+  left: 30%;
+  width: 20%;
+  height: 30%;
+  background-color: rgba(228, 225, 225, 0.9);
+  box-shadow: -1px -1px 22px -1px rgba(0, 0, 0, 0.26); }
+  .avail-mailer-form #avail-contact-name {
+    display: block; }
+  .avail-mailer-form #avail-contact-email {
+    display: block; }
+  .avail-mailer-form #avail-contact-message {
+    display: block; }
+
 /*# sourceMappingURL=styles.css.map */

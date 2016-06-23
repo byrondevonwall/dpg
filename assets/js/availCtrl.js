@@ -90,6 +90,10 @@ $scope.props = [
 
 //------------------mailer code is here-------------------------------//
 
+//modal variables
+mailerShow = false;
+
+
 $scope.sendEmail = function(name){
   var user, email, to, subject, msg, from;
   from = 'rentalinquiry@durhampropertygroup.com'
