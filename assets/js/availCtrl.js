@@ -71,7 +71,7 @@ dpg.controller('availCtrl', ['$scope', '$location', '$http',  function($scope, $
 
 //-------------------carousel/listing code is here-------------------//
 // each carousel needs its own currindex
-$scope.changeInterval = 5000;
+$scope.myInterval = 7000;
 $scope.noWrapSlides = false;
 $scope.active = 0;
 var currIndex = 0;
@@ -106,6 +106,7 @@ $scope.sendEmail = function(name){
   $.get("http://localhost:3002/send", {from: from, user:  user, email: email, to : to, subject : subject, msg : msg}, function(data){
     if(data=='sent'){
       console.log('message sent');
+      mailerShow = false;
     }
   });
 };
