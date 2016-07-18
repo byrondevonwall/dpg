@@ -143,7 +143,7 @@ html, body {
   top: 30%;
   left: 35%;
   width: 30%;
-  height: 40%;
+  height: 325px;
   background-color: rgba(228, 225, 225, 0.9);
   box-shadow: -1px -1px 22px -1px rgba(0, 0, 0, 0.26);
   border-radius: 0.4em; }
@@ -208,5 +208,55 @@ html, body {
     @media screen and (max-width: 1000px) {
       .avail-mailer-form .avail-mailer-close {
         font-size: 2em; } }
+
+.message-sent {
+  display: none;
+  position: fixed;
+  top: 30%;
+  left: 40%;
+  width: 20%;
+  height: 100px;
+  background-color: rgba(228, 225, 225, 0.9);
+  box-shadow: -1px -1px 22px -1px rgba(0, 0, 0, 0.26);
+  border-radius: 0.4em;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold; }
+  .message-sent .sent-button {
+    position: absolute;
+    display: block;
+    width: 20%;
+    left: 40%;
+    background-color: #c6c6c6;
+    text-align: center;
+    border: solid thin #adadad;
+    font-size: 1em;
+    font-weight: normal;
+    margin: 5% 0 0 0; }
+
+.message-error {
+  display: none;
+  position: fixed;
+  top: 30%;
+  left: 40%;
+  width: 20%;
+  height: 100px;
+  background-color: rgba(228, 225, 225, 0.9);
+  box-shadow: -1px -1px 22px -1px rgba(0, 0, 0, 0.26);
+  border-radius: 0.4em;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold; }
+  .message-error .sent-button {
+    position: absolute;
+    display: block;
+    width: 20%;
+    left: 40%;
+    background-color: #c6c6c6;
+    text-align: center;
+    border: solid thin #adadad;
+    font-size: 1em;
+    font-weight: normal;
+    margin: 5% 0 0 0; }
 
 /*# sourceMappingURL=styles.css.map */

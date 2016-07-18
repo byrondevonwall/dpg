@@ -102,14 +102,33 @@ $scope.sendEmail = function(name){
   to = 'info@durhampropertygroup.com';
   subject = 'Inquiry re: '+ name + ' from ' + $('#avail-contact-name').val() + ' ( ' + $('#avail-contact-email').val() + ' )';
   msg = $('#avail-contact-message').val();
-  console.log(user, email, to, subject, msg)
-  $.get("http://localhost:3002/send", {from: from, user:  user, email: email, to : to, subject : subject, msg : msg}, function(data){
+
+
+  // console.log(user, email, to, subject, msg)
+
+  if(user && email && name && msg !=''){
+    $.get("http://localhost:3002/send", {from: from, user:  user, email: email, to : to, subject : subject, msg : msg}, function(data){
     if(data=='sent'){
       console.log('message sent');
-      mailerShow = false;
+      $('#avail-contact-name').val('');
+      $('#avail-contact-email').val('');
+      $('#avail-contact-message').val('');
+      $('.message-sent').show();
     }
-  });
+    });
+  }
+  else{
+    $('.message-error').show();
+  }
+
 };
 
+$scope.closeConfirmation = function(){
+  $('.message-sent').hide();
+};
+
+$scope.closeMsgError = function(){
+  $('.message-error').hide();
+}
 
 }]);//end of controller

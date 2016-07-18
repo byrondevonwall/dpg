@@ -32,10 +32,18 @@
         <input id='avail-contact-name' type='text' placeholder='Your Name'></input>
         <input id='avail-contact-email' type='email' placeholder='Your Email Address'></input>
         <textarea id='avail-contact-message' placeholder='Your Message'></textarea>
-        <span id='avail-send-email' ng-click='sendEmail(prop.name)'>Send Email</span>
+        <span id='avail-send-email' ng-click='sendEmail(prop.name); mailerShow=false'>Send Email</span>
         <span class='avail-mailer-close' ng-click='mailerShow=false'>Close Window</span>
       </div>
     </div>
 
+    <div class='message-sent'>
+      Your message has been sent
+      <div ng-click='closeConfirmation()' class='sent-button'>Close</div>
+    </div>
+
+    <div class='message-error'>
+      Please fill out the form completely
+      <div class='sent-button' ng-click='closeMsgError()'>Close</div>
    </div>
  </div>
